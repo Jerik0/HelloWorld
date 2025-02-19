@@ -32,3 +32,17 @@ for character in name:
     copied_name += alphabet[alphabet.index(character)]
 
 print(copied_name.capitalize())
+
+# ======= lesson 33 - using step in a slice =========
+print(parrot[0:6:2]) # Nre
+print(parrot[0:6:3]) # Nw
+
+number = '9,223;372:036 854,775;807'
+separators = number[1::4]
+
+# start at index 1 (',') and split every 4th character to the end (since no end index provided)
+print(separators) # ',;: ,;'
+
+values = "".join(char if char not in separators else " " for char in number).split()
+
+print([int(val) for val in values])
