@@ -15,7 +15,6 @@ print(age)
 print(type(age))
 print(type(greeting))
 
-age = "2 years"
-
 print(age)
 print(type(age))
+print(f'{name} is {age} years old')
