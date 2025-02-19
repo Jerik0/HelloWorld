@@ -13,3 +13,10 @@ print(challenge2) # edcba
 
 challenge3 = letters[:-9:-1]
 print(challenge3) # zyxwvuts
+
+# ======= lesson 35 - slicing idioms =========
+print(letters[-4:]) # used for getting the last n values from a list.
+print(letters[-1:])
+
+print(letters[:1]) # this is the same thing as letters[0] but doesn't produce an error, produces empty string.
+print(letters[0]) # this will produce an error if the string is empty.
